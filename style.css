@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+   /* primary */
+--LightRed: hsl(0, 100%, 67%);
+--GreenTeal: hsl(166, 100%, 37%);
+--CobaltBlue: hsl(234, 85%, 45%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+
+/* background: ; */
+
+--LightSlateblue: hsl(252, 100%, 67%);
+--Lightroyalblue: hsl(241, 81%, 54%);
+--extraLightRed: hsla(0, 100%, 67%, 0.10);
+--extraOrangeyYellow: hsla(39, 100%, 56%, 0.10);
+--extraGreenTeal: hsla(166, 100%, 37%, 0.10);
+--extraCobaltBlue: hsla(234, 85%, 45%, 0.10);
+/* circle */
+--Violetblue: hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+
+/* neutral */
+
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: "Hanken Grotesk", sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%; 
+}
+  
+main{
+    width: 100%;
+    height: 100%;
+    background: var(--Paleblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px ;
+}
+.container{
+    width:650px;
+    height: 400px;
+ background: var(--White);
+    display:flex;
+    border-radius: 32px;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+ background: linear-gradient(
+    to bottom, 
+    var(--LightSlateblue),
+    var(--Lightroyalblue)
+ );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 20px; */
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    color: var(--White);
+    border-radius: 32px;
+}
+.left .last{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left .gol{
+    width: 140px;
+    height: 140px;
+    background:linear-gradient(
+        to bottom,
+        var(--Violetblue),
+        var(--Persianblue)
+    );
+    border-radius: 50%;
+    display: flex;
+   justify-content: center;   
+   align-items: center;
+}
+.gol{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    padding: 20px ;
+    /* background: var(--White); */
+}
+
+
+.list-area{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.one{
+    display: flex;;
+    justify-content: space-between;
+    background:var(--extraLightRed);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.pic{
+    display: flex;
+    flex-direction: row;
+}
+.pic p{
+    color: var(--LightRed);
+}
+.padd{
+    margin:4px;
+}
+
+.color{
+    color: rgba(0, 0, 0, 0.436);
+}
+
+.two{
+    display: flex;
+    justify-content: space-between;
+    background: var(--extraOrangeyYellow);
+    padding: 10px;
+    border-radius: 5px;
+}
+.pict{
+    display: flex;
+    flex-direction: row;
+}
+.pict p{
+    color: var(--Orangeyyellow);
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+    background: var(--extraGreenTeal);
+    padding: 10px;
+    border-radius: 5px;
+}
+.pictu{
+    display: flex;
+    flex-direction: row;
+}
+.pictu p{
+    color: var(--GreenTeal);
+}
+.four{
+    display: flex;
+    justify-content: space-between;
+    background: var(--extraCobaltBlue);
+    padding: 10px;
+    border-radius: 5px;
+}
+.pictur{
+    display: flex;
+    flex-direction: row;
+}
+.pictur p{
+    color: var(--CobaltBlue);
+}
+
+
+button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: var(--White);
+    background: var(--Darkgrayblue);
+}
+
+button:hover{
+    background:linear-gradient(
+        to bottom,
+        var(--LightSlateblue),
+        var(--Lightroyalblue)
+    );
+
+}
+
+@media (max-width:520px) {  
+  
+    main{
+        padding: 0;
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+     
+    }
+    .left{
+        width: 100%;
+        gap: 20px;
+        border-radius: 0 0 32px 32px;
+    }
+    .right{
+        width: 100%;
+        gap: 40px;
+        padding: 35px;
+    }
+   
+
+
+}
+    
